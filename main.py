@@ -1,10 +1,8 @@
-
 import telebot
 from config import TOKEN
 from extensions import CurrencyConverter, APIException
 
 bot = telebot.TeleBot(TOKEN)
-
 currencies = {
     'USD': 'Доллар США',
     'EUR': 'Евро',
