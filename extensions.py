@@ -1,5 +1,6 @@
 import requests
 import json
+
 class APIException(Exception):
     pass
 
@@ -25,4 +26,3 @@ class CurrencyConverter:
             
         except requests.exceptions.RequestException:
             raise APIException("Ошибка при получении курса валют")
-
